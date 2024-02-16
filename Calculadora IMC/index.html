@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+</head>
+
+<body>
+    <section class="container">
+        <div class="block">
+            <div class="title">
+                <h1>Tabela IMC</h1>
+            </div>
+            <div class="introduction-flex">
+                <div class="introduction-one">
+                    <h2>IMC</h2>
+                    <ul class="list-one">
+                        <li class="item-one"><p>Menos do que 18,5</p></li>
+                        <li class="item-two"><p>Entre 18,5 e 24,9</p></li>
+                        <li class="item-three"><p>Entre 25 e 29,9</p></li>
+                        <li class="item-four"><p>Entre 30 e 34,9</p></li>
+                        <li class="item-five"><p>Entre 35 e 39,9</p></li>
+                        <li class="item-six"><p>Mais do que 40</p></li>
+                    </ul>
+                </div>
+                <div class="introduction-two">
+                    <h2>Resultado</h2>
+                    <ul class="list-two">
+                        <li class="itemtwo-one"><p>Abaixo do peso</p></li>
+                        <li class="itemtwo-two"><p>Peso normal</p></li>
+                        <li class="itemtwo-three"><p>Sobrepeso</p></li>
+                        <li class="itemtwo-four"><p>Obesidade grau 1</p></li>
+                        <li class="itemtwo-five"><p>Obesidade grau 2</p></li>
+                        <li class="itemtwo-six"><p>Obesidade grau 3</p></li>
+                    </ul>
+                </div>
+            </div>
+            <form action="">
+                <div class="title"><h1>Calcule o seu IMC:</h1></div>
+                <div class="inputs-flex">
+                    <div class="peso-flex">
+                        <label for="peso"><h2>Peso:</h2></label>
+                        <input type="text" id="peso" class="peso">
+                    </div>
+                    <div class="altura-flex">
+                        <label for="altura"><h2>Altura:</h2></label>
+                        <input type="text" id="altura" class="altura">
+                    </div>
+                    <button class="submit">Enviar</button>
+                </div>
+                <div class="result"></div>
+            </form>
+        </div>
+    </section>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>

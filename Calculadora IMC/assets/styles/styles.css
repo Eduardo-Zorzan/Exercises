@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+    --background-color-one: rgb(2, 120, 112);
+    --background-color-two: rgb(206, 255, 252);
+}
+.container {
+    background-color: var(--background-color-one);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.block {
+    width: 60vw;
+    height: auto;
+    margin-top: 10vh;
+    background-color: var(--background-color-two);
+    padding: 2vmin;
+    border: solid var(--background-color-two);
+    border-radius: 10px;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.introduction-flex {
+    display: flex;
+    gap: 5vmin;
+    text-indent: 5px;
+    margin: 3vh 0 3vh 0;
+    line-height: 2em;
+}
+form {
+    width: 100%;
+}
+.inputs-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 2vmin;
+    margin: 3vh 0 0 0;
+}
+.peso, .altura {
+    width: 100%;
+    height: 3vh;
+    margin: 1vh 0 0 0;
+}
+h2 {
+    font-size: 1.1em;
+}
+.submit {
+    width: 10vw;
+    height: 3vh;
+    background-color: aliceblue;
+    align-self: flex-end;
+}
+.result-true {
+    background-color: var(--background-color-one);
+    padding: 1vmin;
+    margin: 2vmin 0 2vmin 0;
+    border-radius: 5px;
+}
