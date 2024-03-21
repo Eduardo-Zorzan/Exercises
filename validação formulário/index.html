@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+</head>
+
+<body>
+    <section class="container">
+        <div class="introduction">
+            <h1>Formulário de Cadastro</h1>
+            <div class="requeriments">
+                <ul>
+                    <li>
+                        <p>Nenhum campo pode estar vazio;</p>
+                    </li>
+                    <li>
+                        <p>Usuário só poderá conter letras e/ou números;</p>
+                    </li>
+                    <li>
+                        <p>Usuário deverá ter entre 3 e 12 caracteres;</p>
+                    </li>
+                    <li>
+                        <p>Senha precisa ter entre 6 e 12 caracteres e conter ao menos um simbolo,
+                            uma letra maíscula e um número.</p>
+                    </li>
+                </ul>
+            </div>
+            <form action="" onsubmit="return false" >
+                <div class="input-name">
+                    <h2>Nome:</h2>
+                    <input type="text">
+                </div>
+                <div class="input-lastName">
+                    <h2>Sobrenome:</h2>
+                    <input type="text">
+                </div>
+                <div class="input-CPF">
+                    <h2>CPF:</h2>
+                    <input type="text">
+                </div>
+                <div class="input-user">
+                    <h2>Usuário:</h2>
+                    <input type="text">
+                </div>
+                <div class="input-password">
+                    <h2>Senha:</h2>
+                    <input type="text">
+                </div>
+                <div class="input-repeatedPassword">
+                    <h2>Repetir a senha:</h2>
+                    <input type="text">
+                </div>
+                <button class="send-button"><b>Enviar</b></button>
+            </form>
+
+        </div>
+    </section>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
