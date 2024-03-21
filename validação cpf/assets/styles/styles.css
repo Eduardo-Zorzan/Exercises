@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --background-color-one: rgb(2, 120, 112);
+    --background-color-two: rgb(206, 255, 252);
+}
+.container {
+    background-color: var(--background-color-one);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.introduction {
+    width: 60vw;
+    height: auto;
+    margin-top: 10vh;
+    background-color: var(--background-color-two);
+    padding: 2vmin;
+    border: solid var(--background-color-two);
+    border-radius: 10px;
+    font-size: 1.2em;
+    display: flex;
+    gap: 2vmin;
+    flex-direction: column;
+}
+.verification-input input{
+    width: 30vw;
+    font-size: 1em;
+}
