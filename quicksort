@@ -1,0 +1,53 @@
+function sum (array) {
+    if (array.length === 2) return array[0] + array[1];
+    let firstElement = array[0];
+    return firstElement + sum(array.slice(1));
+}
+
+function quicksort (array) {
+    if (array.length === 0) return array
+    let startPointRepeated;
+    let bigger = [];
+    let smaller = [];
+    let startPoint = Math.floor((array.length - 1) / 2);
+    let start = array[startPoint];
+    array.splice(startPoint, 1)
+    for (let i of array) {
+        if (start < i) bigger.push(i);
+        if (start > i) smaller.push(i);
+        if (start === i) startPointRepeated = start;
+    }
+    if (!startPointRepeated) return quicksort(smaller).concat([start].concat(quicksort(bigger)))
+    return quicksort(smaller).concat([startPointRepeated, start].concat(quicksort(bigger)))
+}
+
+function sort (array) {
+    for (let i in array) {
+        for (let a in array) {
+            if (array[i] < array[a]) {
+                let bigger = array[i];
+                array[i] = array[a]
+                array[a] = bigger;
+            }
+        }
+    }
+    return array
+}
+
+function biggernumber (array) {
+    if (array.length === 1) return array[0];
+    (array[0] > array[1]) ? array.splice(1, 1) : array.shift();
+    return biggernumber(array);
+}
+
+function createList (range) {
+    let list = [];
+    let acumulator = range * 2;
+    while (acumulator > range) {
+        list.push(acumulator - range);
+        acumulator--
+    }
+    return list
+}
+console.log('QUICKSORT: ', quicksort(createList(100000)))
+console.log('SORT: ', sort(createList(100000)))
